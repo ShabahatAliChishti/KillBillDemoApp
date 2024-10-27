@@ -6,7 +6,7 @@ namespace KillBillDemoApp
 {
     public class AccountRequest
     {
-        public Guid AccountId { get; set; }
+        public string AccountId { get; set; }
         public string Name { get; set; }
         public int FirstNameLength { get; set; }
         public string ExternalKey { get; set; }
@@ -59,7 +59,7 @@ namespace KillBillDemoApp
     {
         public string CustomerName { get; set; }
         public string Email { get; set; }
-        public Guid AccountId { get; set; }
+        public string AccountId { get; set; }
         public string PlanName { get; set; }
         public string PriceList { get; set; }
     }

@@ -17,6 +17,8 @@ namespace KillBillDemoApp.Controllers
         [HttpPost("subscribe")]
         public async Task<IActionResult> CreateSubscription(SubscriptionRequest request)
         {
+           
+            request.AccountId = Guid.NewGuid().ToString();
             // Create account first
             var account = await _killBillClient.CreateAccount(new AccountRequest
             {
